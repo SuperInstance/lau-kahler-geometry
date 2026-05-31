@@ -146,7 +146,7 @@ impl HodgeTheory {
         if k > 2 * self.complex_dim {
             return 0;
         }
-        if k % 2 == 0 && k <= 2 * self.complex_dim {
+        if k.is_multiple_of(2) && k <= 2 * self.complex_dim {
             1
         } else {
             0

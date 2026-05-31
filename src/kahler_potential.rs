@@ -32,7 +32,7 @@ impl KahlerPotential {
     pub fn flat(dim: usize) -> Self {
         Self {
             hessian: DMatrix::identity(dim, dim),
-            dim: dim,
+            dim,
         }
     }
 
