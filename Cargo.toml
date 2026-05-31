@@ -1,0 +1,15 @@
+[package]
+name = "lau-kahler-geometry"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+repository = "https://github.com/SuperInstance/lau-kahler-geometry"
+description = "Kähler geometry for agent state spaces — complex manifolds, curvature, and Lefschetz theory"
+
+[dependencies]
+nalgebra = { version = "0.33", features = ["serde-serialize"] }
+serde = { version = "1.0", features = ["derive"] }
+num-complex = "0.4"
+
+[dev-dependencies]
+approx = "0.5"
